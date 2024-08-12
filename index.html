@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body> 
+    <aside id="nav-container">
+      <nav id="navbar">
+        <header>
+          <h1>Java Tutorial</h1>
+        </header>
+        <ul>
+          <li><a href="#java_introduction" class="nav-link">java introduction</a></li>
+          <li><a href="#java_variables" class="nav-link">java variables</a></li>
+          <li><a href="#java_conditions" class="nav-link">java conditions</a></li>
+          <li><a href="#java_while_loop" class="nav-link">java while Loop</a></li>
+          <li><a href="#java_do_while_loop" class="nav-link">java do while Loop</a></li>
+          <li><a href="#java_for_loop" class="nav-link">java for loop</a></li>
+          <li><a href="#reference" class="nav-link">reference</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main-doc">
+      <section class="main-section" id="java_introduction">
+        <header>
+          <h1>java introduction</h1> 
+        </header>
+
+        <article>
+          <h2>What is Java?</h2>
+          <p>Java is a popular programming language, created in 1995.</p>
+          <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+          <p>It is used for:</p>
+          <ul>
+            <li>Mobile applications (specially Android apps)</li>
+            <li>Desktop applications</li>
+            <li>Web applications</li>
+            <li>Web servers and application servers</li>
+            <li>Games</li>
+            <li>Database connection</li>
+            <li>And much, much more!</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="java_variables">
+        <header>
+          <h1>java variables</h1> 
+        </header>
+
+        <article>
+          <p>Variables are containers for storing data values.</p>
+          <p>In Java, there are different types of variables, for example:</p>
+          <ul>
+            <li><span class="important">String</span> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+            <li><span class="important">int</span> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+            <li><span class="important">float</span> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+            <li><span class="important">char</span> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            <li><span class="important">boolean</span> - stores values with two states: true or false</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Declaring Variables</h2>
+          <p>To create a variable, you must specify the type and assign it a value:</p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre><code><span class="type">type</span> variableName = <span class="value">value;</span></code></pre>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="java_conditions">
+        <header>
+          <h1>java conditions</h1>
+        </header>
+
+        <article>
+          <p>Java has the following conditional statements:</p>
+          <ul>
+            <li>Use <span class="important">if</span> to specify a block of code to be executed, if a specified condition is true</li>
+            <li>Use <span class="important">else</span> to specify a block of code to be executed, if the same condition is false</li>
+            <li>Use <span class="important">else if</span> to specify a new condition to test, if the first condition is false</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>The if Statement</h2>
+          <p>Use the <span class="important">if</span> statement to specify a block of Java code to be executed if a condition is <span class="important">true</span>.</p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre>
+<code><span class="keyword">if</span> <span class="value">(</span>condition<span class="value">) {</span>
+  <span class="comment">/* block of code to be executed if the condition is true */</span>
+<span class="value">}</span>
+</code></pre>
+          </div>
+        </article>
+
+        <article>
+          <h2>The else Statement</h2>
+          <p>Use the <span class="important">else</span> statement to specify a block of code to be executed if the condition is <span class="important">false</span>.</p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre>
+<code><span class="keyword">if</span> <span class="value">(</span>condition<span class="value">) {</span>
+  <span class="comment">/* block of code to be executed if the condition is true */</span>
+<span class="value">}</span> <span class="keyword">else</span> <span class="value">{</span>
+  <span class="comment">/* block of code to be executed if the condition is false */</span>
+<span class="value">}</span>
+</code></pre>
+          </div>
+        </article>       
+        
+        <article>
+          <h2>The else if Statement</h2>
+          <p>Use the <span class="important">else if</span> statement to specify a new condition if the first condition is <span class="important">false</span>.</p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre>
+<code><span class="keyword">if</span> <span class="value">(</span>condition1<span class="value">) {</span>
+  <span class="comment">/* block of code to be executed if the condition1 is true */</span>
+<span class="value">}</span> <span class="keyword">else if</span><span class="value">(</span>condition2<span class="value">) {</span>
+  <span class="comment">/* block of code to be executed if the condition1 is false and condition2 is true */</span>
+<span class="value">}</span> <span class="keyword">else</span> <span class="value">{</span>
+  <span class="comment">/* block of code to be executed if the condition1 is false and condition2 is false */</span>
+<span class="value">}</span>
+</code></pre>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="java_while_loop">
+        <header>
+         <h1>java while loop</h1>
+        </header> 
+        <article>
+          <p>The <span class="important">while</span> loop loops through a block of code as long as a specified condition is <span class="important">true</span>:</p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre>
+<code><span class="keyword">while</span> <span class="value">(</span>condition<span class="value">) {</span>
+  <span class="comment">// code block to be executed</span>
+<span class="value">}</span>
+</code></pre>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="java_do_while_loop">
+        <header>
+         <h1>java do while loop</h1>
+        </header>
+        <article>
+          <p>
+            The <span class="important">do/while</span> loop is a variant of the <span class="important">while</span> loop. 
+            This loop will execute the code block once, before checking if the condition is true, then it will repeat the 
+            loop as long as the condition is true.
+          </p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre>
+<code><span class="keyword">do</span> <span class="value">{</span>
+  <span class="comment">// code block to be executed</span>
+<span class="value">}</span> <span class="keyword">while</span> <span class="value">(</span>condition<span class="value">) ;</span>
+</code></pre>
+          </div>
+        </article>
+      </section>
+
+      <section class="main-section" id="java_for_loop">
+        <header>
+         <h1>java for loop</h1>
+        </header>
+        <article>
+          <p>
+            When you know exactly how many times you want to loop through a block of code, use the 
+            <span class="important">for</span> loop instead of a <span class="important">while</span> loop: 
+          </p>
+          <div class="syntax">
+            <h3>Syntax</h3>
+            <pre>
+<code><span class="keyword">for</span> <span class="value">(</span>state <span class="important">1</span><span class="value">;</span> state <span class="important">2</span><span class="value">;</span> state <span class="important">2</span><span class="value">) {</span>
+  <span class="comment">// code block to be executed</span>
+<span class="value">}</span>
+</code></pre>
+          </div>
+          <p><b>State 1</b> is executed (one time) before the execution of the code block.</p>
+          <p><b>State 2</b> defines the condition for executing the code block.</p>
+          <p><b>State 3</b> is executed (every time) after the code block has been executed.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="reference">
+        <header>
+          <h1>reference</h1>
+        </header>
+        <article>
+          <p>
+            All the documentation in this page is taken from 
+            <a href="https://www.w3schools.com/java/default.asp" target="_blank">w3schools</a>
+          </p>
+        </article>
+      </section>
+      <div class="arrow" ><a href="#nav-container" >&#8593;</a></div>
+    </main>
+  </body>
+</html>
+
+a:te
